@@ -28,7 +28,7 @@ app.use((req, res, next) => {
     console.log(req.path, req.method)
     next()
 })
-app.set('trust proxy', true)
+app.set('trust proxy', 1)
 app.use(
     cors({
         origin: process.env.CLIENT_URL,
